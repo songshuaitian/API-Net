@@ -10,7 +10,7 @@
     https://github.com/songshuaitian/API-Net
     ```
 
-2. Install PyTorch 1.12.0 and torchvision 0.13.0.
+2. Install PyTorch 1.13.0 and torchvision 0.14.0.
     ```bash
     conda install -c pytorch pytorch torchvision
     ```
@@ -21,21 +21,17 @@
     ```
     
 ## Prepare
-Download the RESIDE datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets)
-
-You need to put the `depth` into the file and you can download the `depth` from (Link：https://pan.baidu.com/s/1sNoMlcehMUtSLRuRvsjKKw?pwd=dbcw 
-code：dbcw)
+Download the RESIDE datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
 
 The final file path should be the same as the following (please check it carefully):
 ```
 ┬─ save_models
-│   ├─ indoor
-│   │   ├─ DIACMPN-dehaze-Indoor.pth
-│   │   ├─ DIACMPN-depth-Indoor.pth
+│   ├─ rtts
+│   │   ├─ API-Net.pth
 │   │   └─ ... (model name)
 │   └─ ... (exp name)
 └─ data
-    ├─ RESIDE-IN
+    ├─ rgb500
     │   ├─ train
     │   │   ├─ GT
     │   │   │   └─ ... (image filename)
@@ -44,6 +40,10 @@ The final file path should be the same as the following (please check it careful
     │   └─ test
     │   │   ├─ GT
     │   │   │   └─ ... (image filename)
+    │   │   └─ hazy
+    │   │       └─ ... (image filename)
+    ├─ RTTS
+    │   └─ test
     │   │   └─ hazy
     │   │       └─ ... (image filename)
     └─ ... (dataset name)
@@ -56,13 +56,13 @@ To customize the training settings for each experiment, navigate to the `configs
 After adjusting the settings, use the following script to initiate the training of the model:
 
 ```sh
-CUDA_VISIBLE_DEVICES=X python train.py --model (model name) --dataset (dataset name) --exp (exp name)
+CUDA_VISIBLE_DEVICES=X python train.py
 ```
 
-For example, we train the DIACMPN-dehaze-Indoor on the ITS:
+For example：
 
 ```sh
-CUDA_VISIBLE_DEVICES=0 python train.py --model DIACMPN-dehaze-Indoor --dataset RESIDE-IN --exp indoor
+CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 
 ## Evaluation
@@ -71,13 +71,13 @@ Run the following script to evaluate the trained model with a single GPU.
 
 
 ```sh
-CUDA_VISIBLE_DEVICES=X python test.py --model (model name) --dataset (dataset name) --exp (exp name)
+CUDA_VISIBLE_DEVICES=X python test.py
 ```
 
-For example, we test the DIACMPN-dehaze-Indoor on the SOTS indoor set:
+For example：
 
 ```sh
-CUDA_VISIBLE_DEVICES=0 python test.py --model DIACMPN-dehaze-Indoor --dataset RESIDE-IN --exp indoor
+CUDA_VISIBLE_DEVICES=0 python test.py
 ```
 
 
@@ -87,4 +87,4 @@ CUDA_VISIBLE_DEVICES=0 python test.py --model DIACMPN-dehaze-Indoor --dataset RE
     Zhou Shen
     Faculty of Information Engineering and Automation
     Kunming University of Science and Technology                                                           
-    Email: zhoushennn@163.com
+    Email: songshuaitiann@163.com
