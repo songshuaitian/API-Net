@@ -20,10 +20,6 @@
     pip install -r requirements.txt
     ```
 
-## Attention！
-The repository of API-Net will be made public together with the code of this repository once the paper is accepted.
-
-
 ## Prepare
 Download the RESIDE datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
 The final file path should be the same as the following (please check it carefully):
