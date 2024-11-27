@@ -36,20 +36,16 @@ The final file path should be the same as the following (please check it careful
 │   └─ ... (exp name)
 └─ data
     ├─ rgb500
-    │   ├─ train
-    │   │   ├─ GT
-    │   │   │   └─ ... (image filename)
-    │   │   └─ hazy
-    │   │       └─ ... (image filename)
-    │   └─ test
-    │   │   ├─ GT
-    │   │   │   └─ ... (image filename)
-    │   │   └─ hazy
-    │   │       └─ ... (image filename)
+    │   └─ ... (image filename)
+    ├─ depth500
+    │   └─ ... (image filename)
+    ├─ Seggray
+    │   └─ ... (image filename)
     ├─ RTTS
-    │   └─ test
-    │   │   └─ hazy
-    │   │       └─ ... (image filename)
+    │   └─ hazy
+    │   │    └─ ... (image filename)
+    │   └─ Seggray
+    │       └─ ... (image filename)
     └─ ... (dataset name)
 ```
 
