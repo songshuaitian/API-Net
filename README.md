@@ -1,4 +1,4 @@
-# API-Net
+# Image Dehazing for Real-World Scenarios through Adaptive Perturbation Injection and Dual Defense
 ## Pipeline
 
 ![framework](/figs/1.jpg)
