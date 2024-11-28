@@ -22,8 +22,8 @@
 
 ## Prepare
 - **RTTS** can be downloaded from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
-- **OurData** can be downloaded from (Link：https://pan.baidu.com/s/1sNoMlcehMUtSLRuRvsjKKw?pwd=dbcw 
-code：dbcw)
+- **OurData** can be downloaded from (Link：https://pan.baidu.com/s/1dz-4P9a88ucXYqCWarVUJQ?pwd=xq76 
+code：xq76)
 - **RIDCP500** can be downloaded from [RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
 The final file path should be the same as the following (please check it carefully):
 
