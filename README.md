@@ -21,7 +21,10 @@
     ```
 
 ## Prepare
-Download the RESIDE datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+Download the RTTS datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+Download the Ourdata datasets from (Link：https://pan.baidu.com/s/11zsF8BdKg8CsQR4nk8TNJw?pwd=zu9h
+code：zu9h)
+
 The final file path should be the same as the following (please check it carefully):
 
 ```
