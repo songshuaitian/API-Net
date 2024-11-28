@@ -5,26 +5,26 @@
 
 
 ## Installation
-1.
-    ```
-    https://github.com/songshuaitian/API-Net
+1. Clone the repository.
+    ```bash
+   https://github.com/songshuaitian/API-Net
     ```
 
-2.
-    ```
+2. Install PyTorch 1.13.0 and torchvision 0.14.0.
+    ```bash
     conda install -c pytorch pytorch torchvision
     ```
 
-3.
-    ```
+3. Install the other dependencies.
+    ```bash
     pip install -r requirements.txt
     ```
 
 ## Prepare
-[here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
-(
-)
- **RIDCP500**[RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
+- **RTTS** can be downloaded from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+- **OurData** can be downloaded from (Link：https://pan.baidu.com/s/1sNoMlcehMUtSLRuRvsjKKw?pwd=dbcw 
+code：dbcw)
+- **RIDCP500** can be downloaded from [RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
 The final file path should be the same as the following (please check it carefully):
 
 ```
@@ -83,7 +83,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 # Contact:
     Don't hesitate to contact me if you meet any problems when using this code.
 
-    Zhou Shen
+    Song Shuaitian
     Faculty of Information Engineering and Automation
     Kunming University of Science and Technology                                                           
     Email: songshuaitiann@163.com
