@@ -5,26 +5,26 @@
 
 
 ## Installation
-1. Clone the repository.
-    ```bash
+1.
+    ```
     https://github.com/songshuaitian/API-Net
     ```
 
-2. Install PyTorch 1.13.0 and torchvision 0.14.0.
-    ```bash
+2.
+    ```
     conda install -c pytorch pytorch torchvision
     ```
 
-3. Install the other dependencies.
-    ```bash
+3.
+    ```
     pip install -r requirements.txt
     ```
 
 ## Prepare
-Download the RTTS datasets from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
-Download the Ourdata datasets from (Link：https://pan.baidu.com/s/11zsF8BdKg8CsQR4nk8TNJw?pwd=zu9h
-code：zu9h)
-
+[here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+(
+)
+ **RIDCP500**[RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
 The final file path should be the same as the following (please check it carefully):
 
 ```
@@ -50,17 +50,17 @@ The final file path should be the same as the following (please check it careful
 
 ## Training
 
-To customize the training settings for each experiment, navigate to the `configs` folder. Modify the configurations as needed.
+`configs`
 
 After adjusting the settings, use the following script to initiate the training of the model:
 
-```sh
+```
 CUDA_VISIBLE_DEVICES=X python train.py
 ```
 
 For example：
 
-```sh
+```
 CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 
