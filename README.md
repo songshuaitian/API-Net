@@ -22,9 +22,9 @@
 
 ## Prepare
 - **RTTS** can be downloaded from [here.](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+- **RIDCP500** can be downloaded from [RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
 - **OurData** can be downloaded from (Link：https://pan.baidu.com/s/1llt0wjEO3STLjoRgXxp-NA?pwd=uhsr 
 code：uhsr)
-- **RIDCP500** can be downloaded from [RIDCP's Repo](https://github.com/RQ-Wu/RIDCP_dehazing)
 - **weight** can be downloaded from (Link：https://pan.baidu.com/s/1MsmIahkQbjGE659sFjLbzg?pwd=sfiu 
 code：sfiu)
 - The final file path should be the same as the following (please check it carefully):
